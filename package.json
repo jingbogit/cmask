@@ -2,7 +2,7 @@
   "name": "cmask",
   "version": "1.0.0",
   "description": "compressed boolean mask",
-  "main": "release/cmask.min.js",
+  "main": "dist/cmask.min.js",
   "scripts": {
     "build": "babel src/cmask.js --out-file build/cmask.js",
     "minify": "minify build/cmask.js --out-file dist/cmask.min.js",
