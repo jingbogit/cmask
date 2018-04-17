@@ -1,0 +1,46 @@
+{
+  "name": "cmask",
+  "version": "1.0.0",
+  "description": "compressed boolean mask",
+  "main": "release/cmask.min.js",
+  "scripts": {
+    "build": "babel src/cmask.js --out-file build/cmask.js",
+    "minify": "minify build/cmask.js --out-file dist/cmask.min.js",
+    "test": "jest",
+    "prepublishOnly": "yarn build && yarn minify && yarn test",
+    "postpublish": "git push bitbucket master && git push github master",
+    "cover": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jingbogit/cmask.git"
+  },
+  "keywords": [
+    "compression",
+    "boolean",
+    "mask",
+    "compressed"
+  ],
+  "author": "Jingbo Liu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jingbogit/cmask/issues"
+  },
+  "homepage": "https://github.com/jingbogit/cmask#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-minify": "^0.4.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^22.4.3"
+  }
+}

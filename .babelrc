@@ -1,0 +1,14 @@
+{
+  "presets": [
+    ["es2015"],
+    ["env", {
+      "targets": {
+        "browsers": ["last 2 versions", "safari >= 7", "ie >= 8", "> 1% in CN", "> 3% in US"]
+      }
+    }]
+  ],
+  "plugins": [
+    "add-module-exports",
+    "transform-es2015-modules-umd"
+  ]
+}

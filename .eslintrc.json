@@ -1,0 +1,18 @@
+{
+  "extends": ["standard"],
+  "parser": "babel-eslint",
+  "globals": {
+  },
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true
+  },
+  "rules": {
+    "camelcase": "off",
+    "linebreak-style": [
+        "error",
+        "unix"
+    ]
+  }
+}
