@@ -1,6 +1,6 @@
 {
   "name": "cmask",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "compressed boolean mask",
   "main": "dist/cmask.min.js",
   "scripts": {
