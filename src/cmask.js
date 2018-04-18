@@ -5,9 +5,9 @@
  */
 
 /**
- * @class Compressor
+ * @class cmask
  */
-var Compressor = {
+var cmask = {
   // ////////////////////////////////////////////////////////////////////////
   // !NOTE: the num must be in the range [0, 50]
   decodeNumMat: function (_packed) {
@@ -319,4 +319,4 @@ var Compressor = {
 // },
 }
 
-export default Compressor
+export default cmask
