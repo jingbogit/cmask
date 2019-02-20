@@ -1,5 +1,9 @@
+./build/
+./src/
+./test/
 .vscode/
 .babelrc
 .eslintignore
 .eslintrc.json
 .gitignore
+yarn.lock
