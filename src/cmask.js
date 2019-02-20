@@ -268,6 +268,25 @@ var cmask = {
     }
   },
 
+  packImage: function (_image) {
+    // reverse of unpackToImage
+    let rgba = _image.rgba
+    let data = []
+    let numberToEncode = 0 // encode 0 first
+    let cnt = 0
+    for (let i = 0; i < rgba.length; i += 4) {
+      if (rgba[i] === numberToEncode) {
+        cnt += 1
+      }
+      if (i + 4 >= rgba.length || rgba[i + 4] !== numberToEncode) {
+        data.push(cnt)
+        cnt = 0
+        numberToEncode = 255 - numberToEncode
+      }
+    }
+    return {data}
+  },
+
   downsampleImage: function (_img_data, width, height, downsample) {
     const sw = Math.floor(width * downsample)
     const sh = Math.floor(height * downsample)
