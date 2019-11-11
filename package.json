@@ -8,7 +8,7 @@
     "minify": "minify build/cmask.js --out-file dist/cmask.min.js",
     "test": "jest",
     "prepublishOnly": "yarn build && yarn minify && yarn test",
-    "postpublish": "git push bitbucket master && git push github master",
+    "postpublish": "git push origin master && git push github master",
     "cover": "jest --coverage"
   },
   "repository": {
